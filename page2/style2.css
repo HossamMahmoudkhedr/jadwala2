@@ -1,0 +1,394 @@
+.content
+{
+    width: 100%;
+    text-align: center;
+}
+body, .main-content-rtl {
+    direction: rtl;
+    font-family: 'Tajawal', 'Cairo', Arial, sans-serif;
+    background: #F5F5F5;
+    color: #141414;
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 2rem 0 1.5rem 0;
+    text-align: center;
+    color: #141414;
+}
+
+.pricing-toggle,
+.pricing-toggle-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #E5E7EB;
+    border-radius: 16px;
+    width: fit-content;
+    margin: 0 auto 2rem auto;
+    padding: 2px;
+    gap: 0;
+}
+.toggle-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: #6B7280;
+    padding: 0.7rem 1.6rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+    z-index: 1;
+}
+.toggle-btn.active {
+    background: #fff;
+    color: #141414;
+    font-weight: bold;
+    z-index: 2;
+}
+.toggle-btn:not(.active):hover {
+    background: #F5F5F5;
+    color: #141414;
+}
+#discount {
+    background: #8EB44D;
+    color: #fff;
+    border-radius: 12px;
+    padding: 2px 10px;
+    font-size: 0.9em;
+    margin-right: 8px;
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+.pricing-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    padding: 2.5rem 2rem 2rem 2rem;
+    min-width: 260px;
+    max-width: 320px;
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #E5E7EB;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.pricing-card.featured {
+    border: 2px solid #141414;
+    box-shadow: 0 4px 24px rgba(20,20,20,0.10);
+    position: relative;
+    z-index: 2;
+}
+.plan-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #141414;
+}
+.plan-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #141414;
+    margin-bottom: 1rem;
+}
+.plan-price span {
+    font-size: 2.2rem;
+}
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    text-align: right;
+    width: 100%;
+}
+.plan-features li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #6B7280;
+}
+.btn {
+    background: #fff;
+    border: 1.5px solid #141414;
+    color: #141414;
+    padding: 0.6rem 2.2rem;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.btn-dark {
+    background: #141414;
+    color: #fff;
+    border: none;
+}
+.btn-outline {
+    background: #fff;
+    color: #141414;
+    border: 1.5px solid #141414;
+}
+.btn:hover, .btn:focus {
+    background: #141414;
+    color: #fff;
+    border: 1.5px solid #141414;
+}
+.btn-dark:hover, .btn-dark:focus {
+    background: #222;
+}
+
+.faq-section {
+    max-width: 900px; /* نفس وسع كروت الأسعار */
+    margin: 40px auto; /* توسيط العنصر */
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 32px 24px;
+}
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.faq-item {
+    border-bottom: 1px solid #E5E7EB;
+    padding: 0 1.5rem;
+}
+.faq-item:last-child {
+    border-bottom: none;
+}
+.faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: right;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1.2rem 0 1.2rem 0;
+    cursor: pointer;
+    outline: none;
+    color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.2s;
+}
+.faq-arrow {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    transition: transform 0.3s;
+}
+.faq-item.open .faq-arrow {
+    transform: rotate(180deg);
+}
+.faq-answer {
+    display: none;
+    font-size: 1rem;
+    color: #6B7280;
+    padding-bottom: 1.2rem;
+    padding-right: 2.2rem;
+    line-height: 1.8;
+    text-align: right;
+}
+.faq-item.open .faq-answer {
+    display: block;
+}
+
+.cta-section {
+    background: none;
+    border-radius: 18px;
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+}
+.cta-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #141414;
+}
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #6B7280;
+}
+
+.new-pricing-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 40px 0 48px 0;
+}
+.new-pricing-cards .pricing-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 32px 24px 24px 24px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  transition: box-shadow 0.2s;
+}
+.new-pricing-cards .pricing-card.featured {
+  box-shadow: 0 4px 24px rgba(142,180,77,0.10);
+  z-index: 1;
+}
+.new-pricing-cards .plan-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.new-pricing-cards .plan-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+.btn-full {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 1.1rem;
+  padding: 12px 0;
+}
+.new-pricing-cards .plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.new-pricing-cards .plan-features li {
+  font-size: 1rem;
+  color: #444;
+  position: relative;
+  padding-right: 18px;
+}
+.new-pricing-cards .plan-features li:last-child {
+  border-bottom: none;
+}
+.new-pricing-cards .plan-features li:before {
+  content: "\2022";
+  position: absolute;
+  right: 0;
+  color: #444;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+@media (max-width: 1100px) {
+  .new-pricing-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .new-pricing-cards .pricing-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-card {
+        max-width: 98vw;
+        margin-bottom: 1.5rem;
+        min-width: unset;
+        padding: 2rem 0.7rem 1.5rem 0.7rem;
+    }
+    .faq-section, .cta-section {
+        max-width: 98vw;
+        padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+    }
+    .faq-item {
+        padding: 0 0.5rem;
+    }
+    .faq-answer {
+        padding-right: 1rem;
+    }
+    .pricing-toggle, .pricing-toggle-switch {
+        width: 98vw;
+        min-width: unset;
+        padding: 2px 0;
+    }
+}
+.pricing-toggle-switch.toggle-switch-restore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 4px 12px;
+  width: fit-content;
+  margin: 0 auto 24px auto;
+  box-shadow: none;
+  border: 2px solid #e5e7eb;
+}
+.toggle-switch-restore .toggle-btn {
+  background: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  color: #444;
+  padding: 10px 32px 10px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+}
+.toggle-switch-restore .toggle-btn.active {
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+  border: 2px solid #e5e7eb;
+  box-shadow: none;
+  position: relative;
+  z-index: 1;
+}
+.discount-badge {
+  background: #A6BC7A;
+  color: #fff;
+  font-size: 0.95em;
+  border-radius: 16px;
+  padding: 3px 16px;
+  margin-left: 8px;
+  margin-right: 0;
+  vertical-align: middle;
+  font-weight: 500;
+  display: inline-block;
+}
+.btn-dark, .btn-full.selected {
+  background: #222 !important;
+  color: #fff !important;
+  border: none !important;
+}
+.btn-outline {
+  background: #fff !important;
+  color: #222 !important;
+  border: 2px solid #222 !important;
+}
