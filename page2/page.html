@@ -1,194 +1,288 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../style.css">
-    <link rel="stylesheet" href="./style2.css">
-    <script src="../script.js"></script>
-</head>
-<body>
-	<nav class="container">
-		<!-- Start Navbar Section -->
-		<div class="navbar">
-			<div>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="116px"
-					height="24.1"
-					fill="none"
-					viewBox="0 0 117 25">
-					<path
-						fill="#141414"
-						d="m116.323 6.934-12.491 13.199a2.677 2.677 0 0 1-3.934 0l-1.62-1.71a.22.22 0 0 1 0-.297l14.32-15.13a.575.575 0 0 1 .844.002l2.881 3.045a.656.656 0 0 1 0 .891"></path>
-					<path
-						fill="#8EB44D"
-						d="m105.846 6.513-12.494 13.2a2.676 2.676 0 0 1-3.934 0l-6.256-6.61a.65.65 0 0 1 0-.89l2.886-3.046a.574.574 0 0 1 .841 0l4.355 4.602c.078.08.204.08.282 0L102.12 2.576a.574.574 0 0 1 .842 0l2.884 3.045a.66.66 0 0 1 0 .892"></path>
-					<path
-						fill="#141414"
-						d="M62.339 5.82v1.935c8.088-1.401 12.264-.325 12.264 5.91v3.254H58.561v-6.085c0-4.079-2.628-5.29-6.02-5.29h-3.816v1.807h3.817c3.1 0 4.098 1.189 4.098 3.481v6.085h-9.037v1.85h28.9v-5.05c.002-7.09-3.935-9.523-14.164-7.897M26.723 16.92H13.599V5.526H7.34c-5.597 0-6.842 4.187-6.842 6.528s1.245 6.717 6.842 6.717h21.258V.447H26.72V16.92zm-19.38 0c-3.567 0-4.966-2.421-4.966-4.866s1.399-4.677 4.965-4.677h4.382v9.543zM38.338 5.522c-5.597 0-6.842 4.188-6.842 6.528 0 2.341 1.245 6.717 6.842 6.717h4.382c0 3.339-1.564 4.62-8.497 3.455l-.316 1.835c9.031 1.6 10.69-.813 10.69-5.288V5.524h-6.259zm4.382 11.396h-4.382c-3.566 0-4.965-2.42-4.965-4.865s1.399-4.678 4.965-4.678h4.382zM9.047 2.924c.645 0 1.169-.552 1.169-1.232 0-.681-.523-1.233-1.169-1.233-.644 0-1.168.552-1.168 1.233.002.68.524 1.232 1.168 1.232M5.835 2.924c.644 0 1.168-.552 1.168-1.232 0-.681-.522-1.233-1.168-1.233s-1.169.552-1.169 1.233c.002.68.524 1.232 1.169 1.232M69.419 21.776c-.645 0-1.169.552-1.169 1.235 0 .68.522 1.233 1.168 1.233s1.17-.553 1.17-1.233c-.003-.683-.525-1.235-1.17-1.235"></path>
-				</svg>
-			</div>
-			<div class="links">
-				<ul>
-					<li><a href="#">حالات الاستخدام</a></li>
-					<li><a href="#">الأسعار</a></li>
-				</ul>
-				<ul>
-					<li>
-						<a
-							href="#"
-							class="btn btn-gray btn-sm"
-							>تسجيل الدخول</a
-						>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="btn btn-dark btn-sm"
-							>ابدأ الآن</a
-						>
-					</li>
-				</ul>
-			</div>
+<html
+	lang="ar"
+	dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./../style.css" />
+		<link
+			rel="stylesheet"
+			href="./style2.css" />
+		<script src="../script.js"></script>
+	</head>
+	<body>
+		<nav class="container">
+			<!-- Start Navbar Section -->
+			<div class="navbar">
+				<div>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="116px"
+						height="24.1"
+						fill="none"
+						viewBox="0 0 117 25">
+						<path
+							fill="#141414"
+							d="m116.323 6.934-12.491 13.199a2.677 2.677 0 0 1-3.934 0l-1.62-1.71a.22.22 0 0 1 0-.297l14.32-15.13a.575.575 0 0 1 .844.002l2.881 3.045a.656.656 0 0 1 0 .891"></path>
+						<path
+							fill="#8EB44D"
+							d="m105.846 6.513-12.494 13.2a2.676 2.676 0 0 1-3.934 0l-6.256-6.61a.65.65 0 0 1 0-.89l2.886-3.046a.574.574 0 0 1 .841 0l4.355 4.602c.078.08.204.08.282 0L102.12 2.576a.574.574 0 0 1 .842 0l2.884 3.045a.66.66 0 0 1 0 .892"></path>
+						<path
+							fill="#141414"
+							d="M62.339 5.82v1.935c8.088-1.401 12.264-.325 12.264 5.91v3.254H58.561v-6.085c0-4.079-2.628-5.29-6.02-5.29h-3.816v1.807h3.817c3.1 0 4.098 1.189 4.098 3.481v6.085h-9.037v1.85h28.9v-5.05c.002-7.09-3.935-9.523-14.164-7.897M26.723 16.92H13.599V5.526H7.34c-5.597 0-6.842 4.187-6.842 6.528s1.245 6.717 6.842 6.717h21.258V.447H26.72V16.92zm-19.38 0c-3.567 0-4.966-2.421-4.966-4.866s1.399-4.677 4.965-4.677h4.382v9.543zM38.338 5.522c-5.597 0-6.842 4.188-6.842 6.528 0 2.341 1.245 6.717 6.842 6.717h4.382c0 3.339-1.564 4.62-8.497 3.455l-.316 1.835c9.031 1.6 10.69-.813 10.69-5.288V5.524h-6.259zm4.382 11.396h-4.382c-3.566 0-4.965-2.42-4.965-4.865s1.399-4.678 4.965-4.678h4.382zM9.047 2.924c.645 0 1.169-.552 1.169-1.232 0-.681-.523-1.233-1.169-1.233-.644 0-1.168.552-1.168 1.233.002.68.524 1.232 1.168 1.232M5.835 2.924c.644 0 1.168-.552 1.168-1.232 0-.681-.522-1.233-1.168-1.233s-1.169.552-1.169 1.233c.002.68.524 1.232 1.169 1.232M69.419 21.776c-.645 0-1.169.552-1.169 1.235 0 .68.522 1.233 1.168 1.233s1.17-.553 1.17-1.233c-.003-.683-.525-1.235-1.17-1.235"></path>
+					</svg>
+				</div>
+				<div class="links">
+					<ul>
+						<li><a href="#">حالات الاستخدام</a></li>
+						<li><a href="#">الأسعار</a></li>
+					</ul>
+					<ul>
+						<li>
+							<a
+								href="#"
+								class="btn btn-gray btn-sm"
+								>تسجيل الدخول</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="btn btn-dark btn-sm"
+								>ابدأ الآن</a
+							>
+						</li>
+					</ul>
+				</div>
 
-			<button class="menu">
-				<svg
-					width="21"
-					height="20"
-					viewBox="0 0 21 20"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M2.375 5C2.375 4.655 2.655 4.375 3 4.375H18C18.345 4.375 18.625 4.655 18.625 5C18.625 5.345 18.345 5.625 18 5.625H3C2.655 5.625 2.375 5.345 2.375 5ZM18 9.375H3C2.655 9.375 2.375 9.655 2.375 10C2.375 10.345 2.655 10.625 3 10.625H18C18.345 10.625 18.625 10.345 18.625 10C18.625 9.655 18.345 9.375 18 9.375ZM18 14.375H3C2.655 14.375 2.375 14.655 2.375 15C2.375 15.345 2.655 15.625 3 15.625H18C18.345 15.625 18.625 15.345 18.625 15C18.625 14.655 18.345 14.375 18 14.375Z"
-						fill="#25314C" />
-				</svg>
-			</button>
+				<button class="menu">
+					<svg
+						width="21"
+						height="20"
+						viewBox="0 0 21 20"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M2.375 5C2.375 4.655 2.655 4.375 3 4.375H18C18.345 4.375 18.625 4.655 18.625 5C18.625 5.345 18.345 5.625 18 5.625H3C2.655 5.625 2.375 5.345 2.375 5ZM18 9.375H3C2.655 9.375 2.375 9.655 2.375 10C2.375 10.345 2.655 10.625 3 10.625H18C18.345 10.625 18.625 10.345 18.625 10C18.625 9.655 18.345 9.375 18 9.375ZM18 14.375H3C2.655 14.375 2.375 14.655 2.375 15C2.375 15.345 2.655 15.625 3 15.625H18C18.345 15.625 18.625 15.345 18.625 15C18.625 14.655 18.345 14.375 18 14.375Z"
+							fill="#25314C" />
+					</svg>
+				</button>
+			</div>
+		</nav>
+		<div class="content main-content-rtl">
+			<h1 class="section-title">باقات الأسعار</h1>
+			<div class="pricing-toggle-switch toggle-switch-restore">
+				<button
+					class="toggle-btn active"
+					id="btn2">
+					دفع سنوي <span class="discount-badge">وفر %20</span>
+				</button>
+				<button
+					class="toggle-btn"
+					id="btn1">
+					دفع شهري
+				</button>
+			</div>
+			<div class="pricing-cards new-pricing-cards">
+				<div class="pricing-card">
+					<h2 class="plan-title">المجانية</h2>
+					<div class="plan-desc">للمستقلين المبتدئين</div>
+					<div class="plan-price"><span>دائما مجاناً</span></div>
+					<button
+						class="btn btn-outline btn-full"
+						onclick="selectPlan(this)">
+						ابدأ الآن
+					</button>
+					<ul class="plan-features">
+						<li>اجتماعات غير محدودة</li>
+						<li>أحداث فردية (One-on-one)</li>
+						<li>ربط تقويم واحد</li>
+						<li>التكامل مع Zoom و Google Meet</li>
+						<li>دمج أداة الجدولة في موقعك وتخصيصها</li>
+						<li>إرسال رسائل تأكيد بالبريد الإلكتروني</li>
+						<li>الوصول إلى مركز المساعدة</li>
+						<li>دعم عبر البريد الإلكتروني على مدار الساعة</li>
+					</ul>
+				</div>
+
+				<div class="pricing-card featured">
+					<h2 class="plan-title">الأساسية</h2>
+					<div class="plan-desc">للمحترفين والشركات الصغيرة</div>
+					<div class="plan-price"><span>22</span> ريال/ الشهر لكل عضو</div>
+					<button
+						class="btn btn-outline btn-full"
+						onclick="selectPlan(this)">
+						ابدأ الآن مجاناً حتى الإطلاق الرسمي
+					</button>
+					<ul class="plan-features">
+						<li style="color: black">جميع مزايا المجانية</li>
+						<li>أحداث جماعية</li>
+						<li>الأحداث الجماعية المشتركة (Collective events)</li>
+						<li>استطلاعات الاجتماعات (Meeting polls)</li>
+						<li>ربط 6 تقاويم</li>
+						<li>التكامل مع Outlook و Gmail</li>
+						<li>أنظمة رسائل التذكير (Workflows)</li>
+						<li>التكامل مع أنظمة CRM</li>
+						<li>إشعارات SMS</li>
+						<li>إشعارات Slack</li>
+						<li>التكامل مع Zapier</li>
+						<li>إضافة سياسة الإلغاء الخاصة بك</li>
+						<li>استقبال المدفوعات</li>
+						<li>التتبع باستخدام Google و Meta Pixel Analytics</li>
+					</ul>
+				</div>
+
+				<div class="pricing-card">
+					<h2 class="plan-title">الفرق</h2>
+					<div class="plan-desc">للشركات الكبيرة</div>
+					<div class="plan-price"><span>39</span> ريال/ الشهر لكل عضو</div>
+					<button
+						class="btn btn-outline btn-full"
+						onclick="selectPlan(this)">
+						ابدأ الآن مجاناً حتى الإطلاق الرسمي
+					</button>
+					<ul class="plan-features">
+						<li style="color: black">جميع مزايا الأساسية</li>
+						<li>جدولة الأحداث كفريق</li>
+						<li>نماذج التوجيه</li>
+						<li>أحداث تناوبية (Round-robin events)</li>
+						<li>إزالة العلامة التجارية "جدولة"</li>
+						<li>API & Webhooks</li>
+					</ul>
+				</div>
+			</div>
+			<div class="faq-section">
+				<h2 class="section-title">الأسئلة الشائعة</h2>
+				<div class="faq-list">
+					<div class="faq-item open">
+						<button class="faq-question">
+							هل سأدفع أي رسوم إذا بدأت باستخدام النظام الآن؟
+							<span class="faq-arrow"
+								><svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18">
+									<polyline
+										points="4 7 9 12 14 7"
+										fill="none"
+										stroke="#6B7280"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" /></svg
+							></span>
+						</button>
+						<div class="faq-answer">
+							لا، يمكنك استخدام جميع المزايا مجانًا حتى الإطلاق الرسمي. بعدها،
+							يمكنك اختيار الباقة التي تناسب احتياجاتك.
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question">
+							هل يمكنني الإلغاء في أي وقت؟
+							<span class="faq-arrow"
+								><svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18">
+									<polyline
+										points="4 7 9 12 14 7"
+										fill="none"
+										stroke="#6B7280"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" /></svg
+							></span>
+						</button>
+						<div class="faq-answer">
+							نعم، يمكنك الإلغاء في أي وقت دون أي التزامات.
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question">
+							نحن منظمة غير ربحية، هل يوجد أسعار خاصة؟
+							<span class="faq-arrow"
+								><svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18">
+									<polyline
+										points="4 7 9 12 14 7"
+										fill="none"
+										stroke="#6B7280"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" /></svg
+							></span>
+						</button>
+						<div class="faq-answer">
+							نعم، لدينا أسعار خاصة للمنظمات غير الربحية والشركات الكبيرة.
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question">
+							هل الباقات تشمل الدعم؟
+							<span class="faq-arrow"
+								><svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18">
+									<polyline
+										points="4 7 9 12 14 7"
+										fill="none"
+										stroke="#6B7280"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" /></svg
+							></span>
+						</button>
+						<div class="faq-answer">
+							جميع الباقات تشمل دعم فني أساسي، والباقات المدفوعة تشمل دعم متقدم.
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question">
+							هل الباقات تشمل الدعم؟
+							<span class="faq-arrow"
+								><svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18">
+									<polyline
+										points="4 7 9 12 14 7"
+										fill="none"
+										stroke="#6B7280"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" /></svg
+							></span>
+						</button>
+						<div class="faq-answer">نعم، جميع الباقات تشمل الدعم الفني.</div>
+					</div>
+				</div>
+			</div>
+			<!-- Start Try Now Section -->
+			<div class="trynow container spacing">
+				<div class="trynow-content">
+					<div class="heading">
+						<h2>زيادة الإنتاجية تبدأ باستغلال وقت فريقك</h2>
+						<p>
+							ابدأ بتجربة مجانية لمدة 14 يومًا لترى كيف يمكن لجدولة أن يعزز
+							إنتاجية فريقك
+						</p>
+					</div>
+					<div>
+						<button class="btn btn-lg btn-dark start-now">ابدأ مجانًا</button>
+						<p class="no-need-for-credit">لا تحتاج إلى بطاقة إئتمانية</p>
+					</div>
+				</div>
+			</div>
+			<!-- End Try Now Section -->
 		</div>
-	</nav>
-        <div class="content main-content-rtl">
-            <h1 class="section-title">باقات الأسعار</h1>
-            <div class="pricing-toggle-switch toggle-switch-restore">
-                <button class="toggle-btn active" id="btn2">دفع سنوي <span class="discount-badge">وفر %20</span></button>
-                <button class="toggle-btn" id="btn1">دفع شهري</button>
-            </div>
-           <div class="pricing-cards new-pricing-cards">
-    <div class="pricing-card">
-        <h2 class="plan-title">المجانية</h2>
-        <div class="plan-desc">للمستقلين المبتدئين</div>
-        <div class="plan-price"><span>دائما مجاناً</span></div>
-        <button class="btn btn-outline btn-full " onclick="selectPlan(this)">ابدأ الآن</button>
-        <ul class="plan-features">
-            <li>اجتماعات غير محدودة</li>
-            <li>أحداث فردية (One-on-one)</li>
-            <li>ربط تقويم واحد</li>
-            <li>التكامل مع Zoom و Google Meet</li>
-            <li>دمج أداة الجدولة في موقعك وتخصيصها</li>
-            <li>إرسال رسائل تأكيد بالبريد الإلكتروني</li>
-            <li>الوصول إلى مركز المساعدة</li>
-            <li>دعم عبر البريد الإلكتروني على مدار الساعة</li>
-        </ul>
-    </div>
-
-    <div class="pricing-card featured">
-        <h2 class="plan-title">الأساسية</h2>
-        <div class="plan-desc">للمحترفين والشركات الصغيرة</div>
-        <div class="plan-price"><span>22</span> ريال/ الشهر لكل عضو</div>
-        <button class="btn btn-outline btn-full" onclick="selectPlan(this)">ابدأ الآن مجاناً حتى الإطلاق الرسمي</button>
-        <ul class="plan-features">
-            <li style="color: black;">جميع مزايا المجانية</li>
-            <li>أحداث جماعية</li>
-            <li>الأحداث الجماعية المشتركة (Collective events)</li>
-            <li>استطلاعات الاجتماعات (Meeting polls)</li>
-            <li>ربط 6 تقاويم</li>
-            <li>التكامل مع Outlook و Gmail</li>
-            <li>أنظمة رسائل التذكير (Workflows)</li>
-            <li>التكامل مع أنظمة CRM</li>
-            <li>إشعارات SMS</li>
-            <li>إشعارات Slack</li>
-            <li>التكامل مع Zapier</li>
-            <li>إضافة سياسة الإلغاء الخاصة بك</li>
-            <li>استقبال المدفوعات</li>
-            <li>التتبع باستخدام Google و Meta Pixel Analytics</li>
-        </ul>
-    </div>
-
-    <div class="pricing-card">
-        <h2 class="plan-title">الفرق</h2>
-        <div class="plan-desc">للشركات الكبيرة</div>
-        <div class="plan-price"><span>39</span> ريال/ الشهر لكل عضو</div>
-        <button class="btn btn-outline btn-full" onclick="selectPlan(this)">ابدأ الآن مجاناً حتى الإطلاق الرسمي</button>
-        <ul class="plan-features">
-            <li style="color: black;">جميع مزايا الأساسية</li>
-            <li>جدولة الأحداث كفريق</li>
-            <li>نماذج التوجيه</li>
-            <li>أحداث تناوبية (Round-robin events)</li>
-            <li>إزالة العلامة التجارية "جدولة"</li>
-            <li>API & Webhooks</li>
-        </ul>
-    </div>
-</div>
-            <div class="faq-section">
-                <h2 class="section-title">الأسئلة الشائعة</h2>
-                <div class="faq-list">
-                    <div class="faq-item open">
-                        <button class="faq-question">
-                            هل سأدفع أي رسوم إذا بدأت باستخدام النظام الآن؟
-                            <span class="faq-arrow"><svg width="18" height="18" viewBox="0 0 18 18"><polyline points="4 7 9 12 14 7" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                        </button>
-                        <div class="faq-answer">لا، يمكنك استخدام جميع المزايا مجانًا حتى الإطلاق الرسمي. بعدها، يمكنك اختيار الباقة التي تناسب احتياجاتك.</div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            هل يمكنني الإلغاء في أي وقت؟
-                            <span class="faq-arrow"><svg width="18" height="18" viewBox="0 0 18 18"><polyline points="4 7 9 12 14 7" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                        </button>
-                        <div class="faq-answer">نعم، يمكنك الإلغاء في أي وقت دون أي التزامات.</div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            نحن منظمة غير ربحية، هل يوجد أسعار خاصة؟
-                            <span class="faq-arrow"><svg width="18" height="18" viewBox="0 0 18 18"><polyline points="4 7 9 12 14 7" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                        </button>
-                        <div class="faq-answer">نعم، لدينا أسعار خاصة للمنظمات غير الربحية والشركات الكبيرة.</div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            هل الباقات تشمل الدعم؟
-                            <span class="faq-arrow"><svg width="18" height="18" viewBox="0 0 18 18"><polyline points="4 7 9 12 14 7" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                        </button>
-                        <div class="faq-answer">جميع الباقات تشمل دعم فني أساسي، والباقات المدفوعة تشمل دعم متقدم.</div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            هل الباقات تشمل الدعم؟
-                            <span class="faq-arrow"><svg width="18" height="18" viewBox="0 0 18 18"><polyline points="4 7 9 12 14 7" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                        </button>
-                        <div class="faq-answer">نعم، جميع الباقات تشمل الدعم الفني.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cta-section">
-                <h2>زيادة الإنتاجية تبدأ باستغلال وقت فريقك</h2>
-                <p>ابدأ تجربة مجانية لمدة 14 يومًا أو اطلب عرض سعر مخصص لاحتياج فريقك</p>
-                <button class="btn btn-dark">ابدأ الآن</button>
-				<p style="text-align:center; margin-top: 12px; color: #6B7280; font-size: 1rem;">لا تحتاج إلى بطاقة ائتمانية</p>
-				
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 		<footer>
 			<div class="container">
@@ -466,45 +560,60 @@
 		</footer>
 		<script>
 			// FAQ Accordion
-			document.querySelectorAll('.faq-question').forEach(q => {
+			document.querySelectorAll('.faq-question').forEach((q) => {
 				q.addEventListener('click', function () {
 					const item = this.parentElement;
 					const isOpen = item.classList.contains('open');
-					document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+					document
+						.querySelectorAll('.faq-item.open')
+						.forEach((i) => i.classList.remove('open'));
 					if (!isOpen) item.classList.add('open');
 				});
 			});
-			
+
 			// Pricing Toggle
 			const btnMonthly = document.getElementById('btn1');
 			const btnYearly = document.getElementById('btn2');
 			const priceData = [
-				{ monthly: '<span>دائما مجاناً</span>', yearly: '<span>دائما مجاناً</span>' },
-				{ monthly: '<span>22</span> ريال/ الشهر لكل عضو', yearly: '<span>220</span> ريال/ السنة لكل عضو' },
-				{ monthly: '<span>39</span> ريال/ الشهر لكل عضو', yearly: '<span>390</span> ريال/ السنة لكل عضو' }
+				{
+					monthly: '<span>دائما مجاناً</span>',
+					yearly: '<span>دائما مجاناً</span>',
+				},
+				{
+					monthly: '<span>22</span> ريال/ الشهر لكل عضو',
+					yearly: '<span>220</span> ريال/ السنة لكل عضو',
+				},
+				{
+					monthly: '<span>39</span> ريال/ الشهر لكل عضو',
+					yearly: '<span>390</span> ريال/ السنة لكل عضو',
+				},
 			];
-			
+
 			function updatePrices(isYearly) {
-				document.querySelectorAll('.pricing-card .plan-price').forEach((el, i) => {
-					el.innerHTML = isYearly ? priceData[i].yearly : priceData[i].monthly;
-				});
+				document
+					.querySelectorAll('.pricing-card .plan-price')
+					.forEach((el, i) => {
+						el.innerHTML = isYearly
+							? priceData[i].yearly
+							: priceData[i].monthly;
+					});
 			}
-			
+
 			btnMonthly.addEventListener('click', () => {
 				btnMonthly.classList.add('active');
 				btnYearly.classList.remove('active');
 				updatePrices(false);
 			});
-			
+
 			btnYearly.addEventListener('click', () => {
 				btnYearly.classList.add('active');
 				btnMonthly.classList.remove('active');
 				updatePrices(true);
 			});
-			
+
 			// Plan Selection Button Highlight
 			function selectPlan(clickedBtn) {
-				document.querySelectorAll('.btn-full').forEach(btn => {
+				document.querySelectorAll('.btn-full').forEach((btn) => {
 					btn.classList.remove('btn-dark');
 					btn.classList.add('btn-outline');
 				});
@@ -513,15 +622,14 @@
 			}
 
 			// عند تحميل الصفحة: اجعل زر الفرق (الأخير) أسود
-			window.addEventListener('DOMContentLoaded', function() {
+			window.addEventListener('DOMContentLoaded', function () {
 				var planButtons = document.querySelectorAll('.btn-full');
-				if(planButtons.length > 0) {
+				if (planButtons.length > 0) {
 					var lastBtn = planButtons[planButtons.length - 1];
 					lastBtn.classList.remove('btn-outline');
 					lastBtn.classList.add('btn-dark');
 				}
 			});
 		</script>
-			
-</body>
+	</body>
 </html>
