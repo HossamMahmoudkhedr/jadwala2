@@ -7,12 +7,13 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<title>برنامج جدولة المواعيد عبر الإنترنت مجانًا | جدولة</title>
+		<title>الأسعار</title>
 		<link
 			rel="stylesheet"
-			href="style.css" />
-	</head>
+			href="./style.css" />
 
+		<script src="../script.js"></script>
+	</head>
 	<body>
 		<!-- Start Navbar Section -->
 		<nav>
@@ -75,268 +76,219 @@
 			</div>
 		</nav>
 		<!-- End Navbar Section -->
-		<!-- Start Hero Section -->
-		<div class="hero container spacing">
-			<div class="right">
-				<h1 class="desktop">جدولة الاجتماعات بسهولة</h1>
-				<h1 class="mobile">جدولة مواعيد سهلة</h1>
-				<p>
-					سواء كنت تعمل بمفردك أو مع فريقك، تخلص من المحادثات والاتصالات
-					الطويلة. مع جدولة، يبقى تقويمك منظمًا وأنت تبقى منتجًا.
-				</p>
-				<div class="right-content">
-					<div>
-						<button class="btn btn-dark btn-lg">
-							<span
+		<div class="content main-content-rtl">
+			<h1 class="section-title">باقات الأسعار</h1>
+			<div class="pricing-toggle-switch toggle-switch-restore">
+				<button
+					class="toggle-btn active"
+					id="btn2">
+					<p>دفع سنوي</p>
+
+					<span class="discount-badge">وفر %20</span>
+				</button>
+				<button
+					class="toggle-btn"
+					id="btn1">
+					<p>دفع شهري</p>
+				</button>
+			</div>
+			<div class="pricing-cards new-pricing-cards">
+				<div class="pricing-card">
+					<h2 class="plan-title">المجانيـة</h2>
+					<div class="plan-desc">للمستقلين المبتدئين</div>
+					<div class="plan-price"><span>دائما مجاناً</span></div>
+					<button
+						class="btn btn-dark-gray btn-lg"
+						style="width: 100%"
+						onclick="selectPlan(this)">
+						ابدأ الآن
+					</button>
+					<ul class="plan-features">
+						<li>اجتماعات غير محدودة</li>
+						<li>أحداث فردية (One-on-one)</li>
+						<li>ربط تقويم واحد</li>
+						<li>التكامل مع Zoom و Google Meet</li>
+						<li>دمج أداة الجدولة في موقعك وتخصيصها</li>
+						<li>إرسال رسائل تأكيد بالبريد الإلكتروني</li>
+						<li>الوصول إلى مركز المساعدة</li>
+						<li>دعم عبر البريد الإلكتروني على مدار الساعة</li>
+					</ul>
+				</div>
+
+				<div class="pricing-card featured">
+					<h2 class="plan-title">الأساسية</h2>
+					<div class="plan-desc">للمحترفين والشركات الصغيرة</div>
+					<div class="plan-price"><span>22 ريال</span> في الشهر لكل عضو</div>
+					<button
+						class="btn btn-dark-gray btn-lg"
+						onclick="selectPlan(this)">
+						ابدأ الآن مجاناً حتى الإطلاق الرسمي
+					</button>
+					<ul class="plan-features">
+						<li style="color: black">جميع مزايا المجانية</li>
+						<li>أحداث جماعية</li>
+						<li>الأحداث الجماعية المشتركة (Collective events)</li>
+						<li>استطلاعات الاجتماعات (Meeting polls)</li>
+						<li>ربط 6 تقاويم</li>
+						<li>التكامل مع Outlook و Gmail</li>
+						<li>أنظمة رسائل التذكير (Workflows)</li>
+						<li>التكامل مع أنظمة CRM</li>
+						<li>إشعارات SMS</li>
+						<li>إشعارات Slack</li>
+						<li>التكامل مع Zapier</li>
+						<li>إضافة سياسة الإلغاء الخاصة بك</li>
+						<li>استقبال المدفوعات</li>
+						<li>التتبع باستخدام Google و Meta Pixel Analytics</li>
+					</ul>
+				</div>
+
+				<div class="pricing-card">
+					<h2 class="plan-title">الفرق</h2>
+					<div class="plan-desc">للشركات الكبيرة</div>
+					<div class="plan-price"><span>39 ريال</span> في الشهر لكل عضو</div>
+					<button
+						class="btn btn-dark btn-lg"
+						onclick="selectPlan(this)">
+						ابدأ الآن مجاناً حتى الإطلاق الرسمي
+					</button>
+					<ul class="plan-features">
+						<li style="color: black">جميع مزايا الأساسية</li>
+						<li>جدولة الأحداث كفريق</li>
+						<li>نماذج التوجيه</li>
+						<li>أحداث تناوبية (Round-robin events)</li>
+						<li>إزالة العلامة التجارية "جدولة"</li>
+						<li>API & Webhooks</li>
+					</ul>
+				</div>
+			</div>
+			<h2 class="section-title">الأسئلة الشائعة</h2>
+			<div class="faq-section">
+				<div class="faq-list">
+					<div class="faq-item open">
+						<button class="faq-question">
+							هل سأدفع أي رسوم إذا بدأت باستخدام النظام الآن؟
+							<span class="faq-arrow"
 								><svg
-									width="20"
-									height="20"
-									viewBox="0 0 20 20"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_1_295)">
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M4.30305 10C4.30305 9.3649 4.40853 8.75601 4.5968 8.1849L1.30145 5.66846C0.65921 6.97246 0.297363 8.44179 0.297363 10C0.297363 11.5569 0.658765 13.0253 1.30012 14.3285L4.59368 11.8071C4.40719 11.2387 4.30305 10.632 4.30305 10Z"
-											fill="#FBBC05" />
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M10.0891 4.22223C11.4688 4.22223 12.715 4.71112 13.6942 5.51112L16.5427 2.66667C14.8069 1.15556 12.5815 0.222229 10.0891 0.222229C6.2196 0.222229 2.89399 2.43512 1.30151 5.66845L4.59685 8.1849C5.35615 5.88001 7.52056 4.22223 10.0891 4.22223Z"
-											fill="#EB4335" />
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M10.0891 15.7778C7.52056 15.7778 5.35615 14.12 4.59685 11.8151L1.30151 14.3311C2.89399 17.5649 6.2196 19.7778 10.0891 19.7778C12.4774 19.7778 14.7575 18.9298 16.4688 17.3409L13.3408 14.9227C12.4582 15.4787 11.3469 15.7778 10.0891 15.7778Z"
-											fill="#34A853" />
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M19.4356 10C19.4356 9.42223 19.3466 8.80001 19.213 8.22223H10.089V12H15.3409C15.0783 13.288 14.3635 14.2782 13.3407 14.9227L16.4687 17.3409C18.2664 15.6725 19.4356 13.1871 19.4356 10Z"
-											fill="#4285F4" />
-									</g>
-									<defs>
-										<clipPath id="clip0_1_295">
-											<rect
-												width="20"
-												height="20"
-												fill="white" />
-										</clipPath>
-									</defs>
-								</svg>
-							</span>
-							<p>الدخول بحساب جوجل</p>
+									width="18"
+									height="18"
+									viewBox="0 0 18 18">
+									<polyline
+										points="4 7 9 12 14 7"
+										fill="none"
+										stroke="#6B7280"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" /></svg
+							></span>
 						</button>
-						<button class="btn btn-white btn-lg">ابدأ مجانًا</button>
+						<div class="faq-answer">
+							لا، يمكنك استخدام جميع المزايا مجانًا حتى الإطلاق الرسمي. بعدها،
+							يمكنك اختيار الباقة التي تناسب احتياجاتك.
+						</div>
 					</div>
-					<p class="no-need-for-credit">لا تحتاج إلى بطاقة إئتمانية</p>
+					<div class="faq-item">
+						<button class="faq-question">
+							هل يمكنني الإلغاء في أي وقت؟
+							<span class="faq-arrow"
+								><svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18">
+									<polyline
+										points="4 7 9 12 14 7"
+										fill="none"
+										stroke="#6B7280"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" /></svg
+							></span>
+						</button>
+						<div class="faq-answer">
+							نعم، يمكنك الإلغاء في أي وقت دون أي التزامات.
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question">
+							نحن منظمة غير ربحية، هل يوجد أسعار خاصة؟
+							<span class="faq-arrow"
+								><svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18">
+									<polyline
+										points="4 7 9 12 14 7"
+										fill="none"
+										stroke="#6B7280"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" /></svg
+							></span>
+						</button>
+						<div class="faq-answer">
+							نعم، لدينا أسعار خاصة للمنظمات غير الربحية والشركات الكبيرة.
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question">
+							هل الباقات تشمل الدعم؟
+							<span class="faq-arrow"
+								><svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18">
+									<polyline
+										points="4 7 9 12 14 7"
+										fill="none"
+										stroke="#6B7280"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" /></svg
+							></span>
+						</button>
+						<div class="faq-answer">
+							جميع الباقات تشمل دعم فني أساسي، والباقات المدفوعة تشمل دعم متقدم.
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question">
+							هل الباقات تشمل الدعم؟
+							<span class="faq-arrow"
+								><svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18">
+									<polyline
+										points="4 7 9 12 14 7"
+										fill="none"
+										stroke="#6B7280"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round" /></svg
+							></span>
+						</button>
+						<div class="faq-answer">نعم، جميع الباقات تشمل الدعم الفني.</div>
+					</div>
 				</div>
 			</div>
-			<div>
-				<div class="left-content">
-					<div>
-						<img
-							class="desktop"
-							src="./assets/images/calendar.png"
-							alt="calendar" />
-						<img
-							class="mobile"
-							src="./assets/images/calendar-mobile.png"
-							alt="calendar" />
-					</div>
-					<div class="tools">
-						<div>
-							<img
-								src="./assets/images/hubspot.png"
-								alt="hubspot" />
-						</div>
-						<div>
-							<img
-								src="./assets/images/zoom.png"
-								alt="zoom" />
-						</div>
-						<div>
-							<img
-								src="./assets/images/zoho.png"
-								alt="zoho" />
-						</div>
-						<div>
-							<img
-								src="./assets/images/google-calendar.png"
-								alt="google calendar" />
-						</div>
-						<div>
-							<img
-								src="./assets/images/zapier.png"
-								alt="zapier" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Hero Section -->
-		<!-- Start Meetings Section -->
-		<div class="meetings container spacing">
-			<div class="heading">
-				<h2>اجتماعات دون عناء التنسيق</h2>
-				<p class="desktop">
-					بأدوات ذكية وسهلة، اجعل جدولة الاجتماعات أسرع وأكثر تنظيمًا، وامنح
-					فريقك الوقت للتركيز على ما يحقق النجاح.
-				</p>
-				<p class="mobile">
-					ابدأ بتجربة مجانية لمدة 14 يومًا لترى كيف يمكن لجدولة أن يعزز إنتاجية
-					فريقك
-				</p>
-			</div>
-			<div class="meetings-details">
-				<div class="main">
-					<div>
-						<img
-							style="width: 100%"
-							src="./assets/images/animate 1.gif"
-							alt="" />
-					</div>
-					<div>
-						<p>وجه عملاءك حسب احتياجاتهم</p>
+			<!-- Start Try Now Section -->
+			<div class="trynow container spacing">
+				<div class="trynow-content">
+					<div class="heading">
+						<h2>زيادة الإنتاجية تبدأ باستغلال وقت فريقك</h2>
 						<p>
-							وفر تجربة سلسة تضمن توجيه عملائك تلقائيًا إلى الأشخاص أو الفرق
-							الأنسب لاحتياجاتهم.
+							ابدأ بتجربة مجانية لمدة 14 يومًا لترى كيف يمكن لجدولة أن يعزز
+							إنتاجية فريقك
 						</p>
 					</div>
-				</div>
-				<div class="sub">
-					<div class="sub-detail">
-						<div>
-							<img
-								src="./assets/images/animate 4.gif"
-								alt="" />
-						</div>
-						<div>
-							<p>جدولة اجتماعات من موقعك</p>
-							<p>
-								اجعل تجربة الحجز أسرع وأسهل من خلال دمج أداة الجدولة مباشرة في
-								موقعك بسهولة
-							</p>
-						</div>
-					</div>
-					<div class="sub-detail">
-						<div>
-							<img
-								src="./assets/images/animate 3.gif"
-								alt="" />
-						</div>
-						<div>
-							<p>وزّع الاجتماعات على فريقك</p>
-							<p>
-								ميزة التناوب تتيح لعملائك الحجز تلقائيًا مع العضو المتاح في
-								فريقك، مما يضمن توزيع العمل.
-							</p>
-						</div>
-					</div>
-					<div class="sub-detail">
-						<div>
-							<img
-								src="./assets/images/animate 2.gif"
-								alt="" />
-						</div>
-						<div>
-							<p>كن على اطلاع دائم باجتماعاتك</p>
-							<p>
-								اربط تقويمك بسهولة، واجعل اجتماعاتك تُسجَّل تلقائيًا لتضمن تنظيم
-								جدولك وتجنب أي تعارضات
-							</p>
-						</div>
+					<div>
+						<button class="btn btn-lg btn-dark start-now">ابدأ مجانًا</button>
+						<p class="no-need-for-credit">لا تحتاج إلى بطاقة إئتمانية</p>
 					</div>
 				</div>
 			</div>
+			<!-- End Try Now Section -->
 		</div>
-		<!-- End Meetings Section -->
-		<!-- Start features Section -->
-		<div class="container spacing">
-			<div>
-				<div class="heading">
-					<h2>ارتبط بكل شيء بسهولة</h2>
-					<p class="desktop">
-						قم بتوصيل أدواتك المفضلة لتبسيط سير العمل وزيادة الكفاءة.
-					</p>
-					<p class="mobile">
-						ابدأ بتجربة مجانية لمدة 14 يومًا لترى كيف يمكن لجدولة أن يعزز
-						إنتاجية فريقك
-					</p>
-				</div>
-			</div>
-			<div class="slider-container">
-				<div class="cards">
-					<!-- <div class="card">
-						<div class="content">
-							<span
-								><svg
-									width="28"
-									height="29"
-									viewBox="0 0 28 29"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M25.5499 7.74259C24.9363 7.44859 24.2271 7.52899 23.6974 7.95365L20.7084 10.3454V9.83325C20.7084 7.01225 19.1544 5.45825 16.3334 5.45825L5.83337 5.45825C3.01237 5.45825 1.45837 7.01225 1.45837 9.83325L1.45837 19.1666C1.45837 21.9876 3.01237 23.5416 5.83337 23.5416L16.3334 23.5416C19.1544 23.5416 20.7084 21.9876 20.7084 19.1666V18.6545L23.6985 21.0473C24.0159 21.3017 24.3998 21.4321 24.7883 21.4321C25.0461 21.4321 25.3049 21.3751 25.5499 21.2572C26.1601 20.9632 26.5417 20.3577 26.5417 19.6798L26.5417 9.32113C26.5417 8.64213 26.1613 8.03776 25.5499 7.74259ZM18.9584 19.1666C18.9584 21.0064 18.1732 21.7916 16.3334 21.7916L5.83337 21.7916C3.99354 21.7916 3.20837 21.0064 3.20837 19.1666L3.20837 9.83325C3.20837 7.99342 3.99354 7.20825 5.83337 7.20825L16.3334 7.20825C18.1732 7.20825 18.9584 7.99342 18.9584 9.83325L18.9584 19.1666ZM24.7917 19.6798L20.7084 16.4131V12.5878L24.7917 9.32113L24.7917 19.6798Z"
-										fill="black" />
-								</svg>
-							</span>
-							<h5>الاجتماعات الافتراضية</h5>
-							<p>
-								أضف روابط Zoom وGoogle Meet تلقائيًا إلى مواعيدك الافتراضية
-								بسهولة
-							</p>
-						</div>
-					</div> -->
-				</div>
-				<div class="arrows">
-					<button id="rightArrow">
-						<svg
-							width="15"
-							height="15"
-							viewBox="0 0 15 15"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M6.69197 12.3168C6.81384 12.195 6.87507 12.0349 6.87507 11.8749C6.87507 11.7149 6.81384 11.5549 6.69197 11.433L3.38386 8.12493L13.1251 8.12493C13.4701 8.12493 13.7501 7.84556 13.7501 7.49993C13.7501 7.15431 13.4701 6.87493 13.1251 6.87493L3.38386 6.87493L6.69197 3.56683C6.93634 3.32245 6.93634 2.92741 6.69197 2.68304C6.44759 2.43866 6.05255 2.43866 5.80818 2.68304L1.43379 7.05743C1.37566 7.11555 1.33001 7.18426 1.29814 7.26113C1.23501 7.41363 1.23501 7.58623 1.29814 7.73873C1.33001 7.81561 1.37566 7.88431 1.43379 7.94244L5.80818 12.3168C6.05255 12.5612 6.44759 12.5612 6.69197 12.3168Z"
-								fill="black" />
-						</svg>
-					</button>
-					<button id="leftArrow">
-						<svg
-							width="15"
-							height="15"
-							viewBox="0 0 15 15"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M6.69197 12.3168C6.81384 12.195 6.87507 12.0349 6.87507 11.8749C6.87507 11.7149 6.81384 11.5549 6.69197 11.433L3.38386 8.12493L13.1251 8.12493C13.4701 8.12493 13.7501 7.84556 13.7501 7.49993C13.7501 7.15431 13.4701 6.87493 13.1251 6.87493L3.38386 6.87493L6.69197 3.56683C6.93634 3.32245 6.93634 2.92741 6.69197 2.68304C6.44759 2.43866 6.05255 2.43866 5.80818 2.68304L1.43379 7.05743C1.37566 7.11555 1.33001 7.18426 1.29814 7.26113C1.23501 7.41363 1.23501 7.58623 1.29814 7.73873C1.33001 7.81561 1.37566 7.88431 1.43379 7.94244L5.80818 12.3168C6.05255 12.5612 6.44759 12.5612 6.69197 12.3168Z"
-								fill="black" />
-						</svg>
-					</button>
-				</div>
-			</div>
-		</div>
-		<!-- End features Section -->
-		<!-- Start Try Now Section -->
-		<div class="trynow container spacing">
-			<div class="trynow-content">
-				<div class="heading">
-					<h2>زيادة الإنتاجية تبدأ باستغلال وقت فريقك</h2>
-					<p>
-						ابدأ بتجربة مجانية لمدة 14 يومًا لترى كيف يمكن لجدولة أن يعزز
-						إنتاجية فريقك
-					</p>
-				</div>
-				<div>
-					<button class="btn btn-lg btn-dark start-now">ابدأ مجانًا</button>
-					<p class="no-need-for-credit">لا تحتاج إلى بطاقة إئتمانية</p>
-				</div>
-			</div>
-		</div>
-		<!-- End Try Now Section -->
-		<!-- Start Footer Section -->
+
 		<!-- Start Footer -->
 		<footer>
 			<div class="container">
@@ -605,6 +557,7 @@
 			</div>
 		</footer>
 		<!-- End Footer Section -->
+
 		<script
 			src="./script.js"
 			type="module"></script>

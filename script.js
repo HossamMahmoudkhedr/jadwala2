@@ -5,6 +5,9 @@ const year = document.getElementById('year');
 const cardsContainer = document.querySelector('.cards');
 const leftArrow = document.getElementById('leftArrow');
 const rightArrow = document.getElementById('rightArrow');
+const faqQuestions = document.querySelectorAll('.faq-question');
+const btnMonthly = document.getElementById('btn1');
+const btnYearly = document.getElementById('btn2');
 
 let translateValue = 0;
 let moveby = 20;
@@ -82,9 +85,60 @@ function moveRight() {
 	console.log(translateValue);
 	cardsContainer.style.transform = `translateX(${translateValue}%)`;
 }
+
+if (faqQuestions) {
+	faqQuestions.forEach((q) => {
+		q.addEventListener('click', function () {
+			const item = this.parentElement;
+			const isOpen = item.classList.contains('open');
+			document
+				.querySelectorAll('.faq-item.open')
+				.forEach((i) => i.classList.remove('open'));
+			if (!isOpen) item.classList.add('open');
+		});
+	});
+}
+
+const priceData = [
+	{
+		monthly: '<span>دائما مجاناً</span>',
+		yearly: '<span>دائما مجاناً</span>',
+	},
+	{
+		monthly: '<span>22 ريال</span> في الشهر لكل عضو',
+		yearly: '<span>220 ريال</span> في السنة لكل عضو',
+	},
+	{
+		monthly: '<span>39 ريال</span>  في الشهر لكل عضو',
+		yearly: '<span>390 ريال</span> في السنة لكل عضو',
+	},
+];
+
+function updatePrices(isYearly) {
+	document.querySelectorAll('.pricing-card .plan-price').forEach((el, i) => {
+		el.innerHTML = isYearly ? priceData[i].yearly : priceData[i].monthly;
+	});
+}
+
+if (btnMonthly) {
+	btnMonthly.addEventListener('click', () => {
+		btnMonthly.classList.add('active');
+		btnYearly.classList.remove('active');
+		updatePrices(false);
+	});
+}
+
+if (btnYearly) {
+	btnYearly.addEventListener('click', () => {
+		btnYearly.classList.add('active');
+		btnMonthly.classList.remove('active');
+		updatePrices(true);
+	});
+}
+
 setYear();
-setCards();
+if (rightArrow && cardsContainer) setCards();
 menu.addEventListener('click', toggleMenu);
-leftArrow.addEventListener('click', moveLeft);
-rightArrow.addEventListener('click', moveRight);
+if (leftArrow) leftArrow.addEventListener('click', moveLeft);
+if (rightArrow) rightArrow.addEventListener('click', moveRight);
 window.addEventListener('resize', setMoveEnd);
