@@ -105,13 +105,13 @@ const priceData = [
 		yearly: '<span>دائما مجاناً</span>',
 	},
 	{
-		monthly: '<span>22 ريال</span> في الشهر لكل عضو',
-		yearly: '<span>220 ريال</span> في السنة لكل عضو',
+		monthly: '<span>39 ريال</span> في الشهر لكل عضو',
+		yearly: '<span>29 ريال</span> في السنة لكل عضو',
 	},
-	{
-		monthly: '<span>39 ريال</span>  في الشهر لكل عضو',
-		yearly: '<span>390 ريال</span> في السنة لكل عضو',
-	},
+	// {
+	// 	monthly: '<span>39 ريال</span>  في الشهر لكل عضو',
+	// 	yearly: '<span>390 ريال</span> في السنة لكل عضو',
+	// },
 ];
 
 function updatePrices(isYearly) {

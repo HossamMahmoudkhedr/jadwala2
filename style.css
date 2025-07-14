@@ -736,6 +736,25 @@ pricing-toggle-switch button p {
 	font-size: 1rem;
 }
 
+.new-pricing-cards .plan-features li:before {
+	content: '\2022';
+	position: absolute;
+	right: 0;
+	color: #444;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+/* .new-pricing-cards .plan-price span::before {
+	content: '';
+	content: "";
+    position: absolute;
+    left: -3px;
+    top: 45%;
+    width: 120%;
+    height: 1.5px;
+    background-color: black;
+    transform: rotate(-14deg);
+} */
 .btn-dark,
 .btn-full.selected {
 	background: #222 !important;
