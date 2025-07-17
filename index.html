@@ -638,9 +638,10 @@
 		<script>
 			let slides = 2.7;
 			function setMoveEnd() {
-				console.log('hi');
 				if (window.innerWidth <= 768) {
 					slides = 1.15;
+				} else if (window.innerWidth <= 992 && window.innerWidth > 768) {
+					slides = 2;
 				} else {
 					slides = 2.7;
 				}
