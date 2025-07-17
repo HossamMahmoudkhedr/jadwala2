@@ -12,6 +12,10 @@
 	font-family: 'Vazirmatn', sans-serif;
 	box-sizing: border-box;
 }
+.swiper {
+	margin-top: 2rem;
+	overflow: unset;
+}
 body,
 html {
 	overflow-x: hidden;
@@ -295,7 +299,7 @@ a {
 	transition: all 0.3s ease-in-out;
 }
 .card {
-	width: 450px;
+	width: 450px !important;
 	background-color: white;
 	border: 1px solid #d4d4d4;
 	border-radius: 0.75rem;
@@ -317,10 +321,30 @@ a {
 
 .arrows {
 	position: absolute;
-	bottom: -20px;
+	bottom: -40px;
 	left: 20px;
+	transform: rotate(180deg) scale(0.6);
 }
 
+.arrows div {
+	position: relative;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.arrows div:last-child {
+	transform: rotate(180deg);
+}
+
+.arrows div svg {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #e9e9e9;
+	padding: 0.4rem;
+}
 #rightArrow {
 	transform: rotate(180deg);
 }

@@ -2,9 +2,9 @@ import { features } from './data/featuresData.js';
 const menu = document.querySelector('.menu');
 const links = document.querySelector('.links');
 const year = document.getElementById('year');
-const cardsContainer = document.querySelector('.cards');
-const leftArrow = document.getElementById('leftArrow');
-const rightArrow = document.getElementById('rightArrow');
+const cardsContainer = document.querySelector('.swiper-wrapper');
+const leftArrow = document.querySelector('.swiper-button-next');
+const rightArrow = document.querySelector('.swiper-button-prev');
 const faqQuestions = document.querySelectorAll('.faq-question');
 const btnMonthly = document.getElementById('btn1');
 const btnYearly = document.getElementById('btn2');
@@ -14,17 +14,17 @@ let moveby = 20;
 let end = 60;
 
 let date;
-function setMoveEnd() {
-	if (window.innerWidth <= 768) {
-		moveby = 12;
-		end = 84;
-	} else {
-		let moveby = 20;
-		let end = 60;
-	}
-}
+// function setMoveEnd() {
+// 	if (window.innerWidth <= 768) {
+// 		moveby = 12;
+// 		end = 84;
+// 	} else {
+// 		let moveby = 20;
+// 		let end = 60;
+// 	}
+// }
 
-setMoveEnd();
+// setMoveEnd();
 
 function setYear() {
 	if (!date) date = new Date();
@@ -39,7 +39,7 @@ function toggleMenu() {
 function setCards() {
 	let html = ``;
 	features.forEach((feature) => {
-		html += `<div class="card">
+		html += `<div class="card swiper-slide">
 						<div class="content">
 							<span
 								>${feature.icon}
@@ -137,8 +137,8 @@ if (btnYearly) {
 }
 
 setYear();
-if (rightArrow && cardsContainer) setCards();
+if (cardsContainer) setCards();
 menu.addEventListener('click', toggleMenu);
-if (leftArrow) leftArrow.addEventListener('click', moveLeft);
-if (rightArrow) rightArrow.addEventListener('click', moveRight);
-window.addEventListener('resize', setMoveEnd);
+// if (leftArrow) leftArrow.addEventListener('click', moveLeft);
+// if (rightArrow) rightArrow.addEventListener('click', moveRight);
+// window.addEventListener('resize', setMoveEnd);
