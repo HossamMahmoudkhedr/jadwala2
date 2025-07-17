@@ -12,9 +12,12 @@
 	font-family: 'Vazirmatn', sans-serif;
 	box-sizing: border-box;
 }
+body,
+html {
+	overflow-x: hidden;
+}
 body {
 	background-color: #f1f1f1;
-	overflow-x: hidden;
 }
 .heading {
 	display: flex;
