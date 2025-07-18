@@ -299,7 +299,7 @@ a {
 	transition: all 0.3s ease-in-out;
 }
 .card {
-	width: 450px !important;
+	/* width: 450px !important; */
 	background-color: white;
 	border: 1px solid #d4d4d4;
 	border-radius: 0.75rem;
@@ -1071,7 +1071,7 @@ pricing-toggle-switch button p {
 	}
 	.card {
 		height: 318px;
-		width: 300px !important;
+		/* width: 300px !important; */
 	}
 	.slider-container {
 		height: 400px;

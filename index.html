@@ -636,25 +636,31 @@
 			src="./script.js"
 			type="module"></script>
 		<script>
-			let slides = 2.7;
-			function setMoveEnd() {
-				if (window.innerWidth <= 768) {
-					slides = 1.15;
-				} else if (window.innerWidth <= 992 && window.innerWidth > 768) {
-					slides = 2;
-				} else {
-					slides = 2.7;
-				}
-			}
-			setMoveEnd();
 			var swiper = new Swiper('.swiper', {
-				slidesPerView: slides,
+				slidesPerView: 1,
+				breakpoints: {
+					// when window width is >= 320px
+					320: {
+						slidesPerView: 1,
+						// width: 300,
+					},
+					// when window width is >= 480px
+					480: {
+						slidesPerView: 2,
+					},
+					// when window width is >= 640px
+					640: {
+						slidesPerView: 2,
+						width: 900,
+					},
+					992: {
+						slidesPerView: 3,
+						width: 1400,
+					},
+				},
 				centeredSlides: false,
 				spaceBetween: 15,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'fraction',
-				},
+
 				navigation: {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
