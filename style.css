@@ -322,7 +322,7 @@ a {
 .arrows {
 	position: absolute;
 	bottom: -40px;
-	left: 20px;
+	left: -12px;
 	transform: rotate(180deg) scale(0.6);
 }
 
