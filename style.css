@@ -781,6 +781,18 @@ pricing-toggle-switch button p {
 	font-weight: bold;
 	font-size: 1.2em;
 }
+.price {
+	position: relative;
+}
+.line {
+	position: absolute;
+	right: -5px;
+	top: 40%;
+	width: 50%;
+	height: 2px;
+	background-color: black;
+	transform: rotate(-14deg);
+}
 /* .new-pricing-cards .plan-price span::before {
 	content: '';
 	content: "";
